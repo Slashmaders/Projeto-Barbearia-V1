@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/contato.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Barbearia Contoso - Produtos</title>
+  </head>
+  <body>
+    <header>
+      <div class="caixa">
+        <img class="img-logo" src="img/logo.png" alt="" />
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produto.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="principal">
+      <form action="">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" class="input-padrao" required>
+
+        <label for="email">E-mail:</label>
+        <input
+          type="text"
+          name="email"
+          class="input-padrao"
+          id="email"
+          placeholder="SeuEmail@dominio.com"
+        >
+
+        <label for="telefone">Telefone:</label>
+        <input
+          type="text"
+          name="telefone"
+          class="input-padrao"
+          id="telefone"
+          placeholder="(XX) XXXXX-XXXX"
+        >
+
+        <label for="mensagem">mensagem</label>
+        <textarea
+          name=""
+          id="mensagem"
+          class="input-padrao"
+          cols="71"
+          rows="10"
+        >
+        </textarea>
+
+        <fieldset>
+          <legend>Como prefere nosso contato?</legend>
+          <label for="radio-email">
+            <input
+              type="radio"
+              name="contato"
+              value="email"
+              id="radio-email"
+            />E-mail</label
+          >
+
+          <label for="radio-telefone">
+            <input
+              type="radio"
+              name="contato"
+              value="email"
+              id="radio-email"
+            />Telefone</label
+          >
+
+          <label for="radio-whatsapp">
+            <input
+              type="radio"
+              name="contato"
+              value="email"
+              id="radio-email"
+              checked
+            />Whatsapp</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>Qual horario prefere seu atendimento? </legend>
+          <select name="" id="">
+            <option value="">Manhã</option>
+            <option value="">Tarde</option>
+            <option value="">Noite</option>
+          
+          </select>
+
+        </fieldset>
+
+        <fieldset>
+        
+          <label for="checkbox">
+            
+          <input class="checkbox" type="checkbox" checked>
+            
+          Gostaria de receber nossas novidades por email?</label>
+
+          <input type="submit" class="enviar" value="Enviar Formulario" />
+
+        </fieldset>
+     
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda ~ Sexta</td>
+            <td>8h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Sabado</td>
+            <td>13h ~ 17h</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <img src="img/logo-branco.png" alt="" />
+      <p class="copy"></p>
+      <p class="copy">Todos os Direitos Reservados - Barbearia Contoso</p>
+    </footer>
+  </body>
+</html>

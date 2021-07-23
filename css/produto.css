@@ -1,0 +1,118 @@
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #000000;
+  font-size: 26px;
+  background: #888888;
+}
+
+header {
+  background: #888888;
+  padding: 20px 0;
+}
+
+.caixa{
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav{
+  position: absolute;
+  top: 110px;
+  right: 0px;
+}
+
+nav li{
+  display: inline;
+  margin: 0px 0px 0px 15px;
+}
+
+nav li a{
+  text-transform: uppercase;
+  font-size: 33px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  transition: 450ms;
+}
+
+nav a:hover {
+  color: blue;
+  transition: 400ms;
+  font-size: 40px;
+}
+
+.produto{
+  width: 940px;
+  margin: 0 auto;
+}
+
+.produto li{
+  background: burlywood;
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1,5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 12px;
+  transition: 400ms;
+}
+
+.produto li:hover{
+  border-color: yellow;
+  background: #bbbbbb;
+} 
+
+.produto li:active{
+  border-color: red;
+  font-size: 35px;
+}
+
+.copy{
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+footer{
+  text-align: center;
+  background: #888888;
+  padding: 40px 0;
+}
+
+
+@media screen and (max-width: 1024px){
+.caixa {  
+   width: auto; 
+}
+
+.principal, .footer{  
+  width: auto; 
+}
+
+h1{
+  text-align: center;
+}
+  
+nav{
+    position: static;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+  .produto{  
+   width: 100%; 
+   text-align: center;
+}
+
+  .produto li{
+    width: 90%;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+}
